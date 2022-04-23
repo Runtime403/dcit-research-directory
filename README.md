@@ -1,6 +1,6 @@
 ## Deployed app: https://dcit-research-directory.herokuapp.com/
 
-To add more DCIT authors, open the "staffmembers.txt" file and enter the full name of the author followed by a "," and then their google scholar profile ID.
+To add more DCIT authors, open the "staffmembers.txt" file and enter the full name of the author followed by a "," and then their google scholar profile ID. Save the file.
 <br>
 eg. John Doe, 8H34NkAWd
 <br>

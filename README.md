@@ -2,7 +2,9 @@
 <br> </br>
 
 To add more DCIT authors, open the "staffmembers.txt" file and enter the full name of the author followed by a "," and then their google scholar profile ID.
+<br>
 eg. John Doe, 8H34NkAWd
+<br>
 To get the google scholar profile ID, go to their google scholar profile and in the URL address bar, their ID is located after the "user=" in the address, copy and paste that into the staffmembers.txt file.
 
 <br> </br>

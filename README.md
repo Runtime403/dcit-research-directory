@@ -16,4 +16,5 @@ To update the most_cited.txt file that outputs the data onto the website, run th
 To update the authors.txt file that outputs data onto the website, run the pull_authors.py file. <br>
 
 <br>
-To r
+To run these python scripts mentioned above automatically on a weekly basis, follow this video for each script: https://www.youtube.com/watch?v=CAH0B1ErriI <br>
+This must be run on a computer that will be deploying the website <br>

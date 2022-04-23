@@ -4,13 +4,16 @@ To add more DCIT authors, open the "staffmembers.txt" file and enter the full na
 <br>
 eg. John Doe, 8H34NkAWd
 <br>
-To get the google scholar profile ID, go to their google scholar profile and in the URL address bar, their ID is located after the "user=" in the address, copy and paste that into the staffmembers.txt file.
-<br>
+To get the google scholar profile ID, go to their google scholar profile and in the URL address bar, their ID is located after the "user=" in the address, copy and paste that into the staffmembers.txt file.<br>
 
 <b> To Run Python files, you must install scholarly: </b><br>
 See here on how to install scholarly: https://scholarly.readthedocs.io/en/latest/quickstart.html<br>
-You must have pip installed on your system to install scholarly. 
+You must have pip installed on your system to install scholarly. <br>
 <br>
+
 To update the most_recent.txt file that outputs the data onto the website, run the pull_cited.py file. <br>
 To update the most_cited.txt file that outputs the data onto the website, run the pull_recent.py file. <br>
 To update the authors.txt file that outputs data onto the website, run the pull_authors.py file. <br>
+
+<br>
+To r

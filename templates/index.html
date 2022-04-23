@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>DCIT Research Directory</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/">Most Recent</a></li>
+        <li><a href="/mostcited/">Most Cited</a></li>
+        <li><a href="/author/">Authors</a></li>
+        <li><a href="/search/">Search</a></li>
+    </ul>
+
+    <div>
+        <img src="{{url_for('static', filename='images/library2.jpg')}}" id="heroimg">
+        <div class="welcome"> <h1 id="wel">Welcome to UWI DCIT Research Directory </h1> </div>
+    </div>
+    <h3 style="margin-left: 10px; margin-top: 5px;">Most Recent</h3>
+    {% for pub in most_recent%}
+    <div class="pub">
+        <div class="pub-info">
+            <a href="{{pub['URL']}}" id="title">{{pub['Title']}} </a>
+            <p><b>Abstract:</b> {{pub['Abstract']}}</p>
+            <p><b>Author:</b> {{pub['Author']}}</p>
+            <p><b>Year Published:</b> {{pub['Year']}}</p>
+            <p><b>Citations:</b> {{pub['Num_Citations']}}</p>
+        </div>
+    </div>
+    {% endfor %}
+
+</body>
+</html>

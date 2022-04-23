@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>DCIT Research Directory</title>
+</head>
+<body>
+    <script src="{{ url_for('static', filename= 'js/search.js') }}"></script>
+    <ul>
+        <li><a href="/">Most Recent</a></li>
+        <li><a href="/mostcited/">Most Cited</a></li>
+        <li><a href="/author/">Authors</a></li>
+        <li><a href="/search/">Search</a></li>
+    </ul>
+
+    <div><img src="" id="heroimg"></div>
+
+    <h3 style="margin-left: 10px;">Search publications from DCIT authors</h3>
+
+    <div class="searchcontainer">
+        <div class = searchbarcont>
+            <input id = "searchbar" type="text" placeholder="Search for an author or publication" name="searchword">
+        </div>
+        <div class="searchbuttoncontainer"> 
+            <button type= "button" class = "searchbutton" onclick="search()"> Search </button> 
+        </div>
+    </div>
+
+    <div class="pub">
+        <div class="pub-info">
+            
+        </div>
+    </div>
+
+</body>
+</html>

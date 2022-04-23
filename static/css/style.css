@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,600,700,700i,800,800i,900");
+:root {
+  --blue: #79A9F5;
+  --indigo: #C45F90;
+  --purple: #A16AE8;
+  --pink: #FC8BC0;
+  --red: #F85C70;
+  --orange: #FF8882;
+  --yellow: #FAD02C;
+  --green: #A3C14A;
+  --teal: #20c997;
+  --cyan: #47D8E0;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #bc8c4c;
+  --secondary: #6c757d;
+  --success: #A3C14A;
+  --info: #47D8E0;
+  --warning: #FAD02C;
+  --danger: #F85C70;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Fira Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212529;
+}
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover{
+  background-color: #343a40;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444;
+    text-align: left;
+    background-color: #fff;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a{
+  color: #c28c44;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover{
+  text-decoration: underline; 
+}
+
+.pub{
+  background-color: #ebebeb;
+}
+
+.pub-info{
+  margin-left: 10px;
+}
+
+#title{
+  font-size: 20px;
+}
+
+#author-cont{
+  margin-bottom: 25px;
+  background-color: #ebebeb;
+  height:250px;
+}
+
+#author-info{
+  float: left;
+  margin-left: 10px;
+}
+
+#name{
+  font-size: 30px;
+}
+
+#pic{
+  display: block;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+#picdiv{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#heroimg{
+  height: 100%;
+  width: 100%;
+}
+
+.welcome{
+  position: absolute;
+  top: 20%;
+  left: 1%;
+}
+
+#wel{
+  margin-left: 10px;
+  color: white;
+  font-size: 50px;
+}

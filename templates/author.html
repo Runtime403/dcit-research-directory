@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>DCIT Research Directory</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/">Most Recent</a></li>
+        <li><a href="/mostcited/">Most Cited</a></li>
+        <li><a href="/author/">Authors</a></li>
+        <li><a href="/search/">Search</a></li>
+    </ul>
+    <h1>Meet the Authors of DCIT</h1>
+    {% for a in authors%}
+    <div id="author-cont">
+        {% if a['Pic'] == "----" %}
+        <div id="picdiv"><img src="{{url_for('static', filename='images/defaulticon.jpg')}}" id="pic"></div>
+        {% else %}
+            <div id="picdiv"><img src="{{a['Pic']}}" id="pic"></div>
+        {% endif %}
+        <div id="author-info">
+            <span title="Go to google scholar profile" ><a href="https://scholar.google.com/citations?hl=en&user={{a['Scholar']}}" id="name">{{a['Name']}}</a></span>
+            <p> Affiliations: {{a['Affiliations']}} </p>
+            <p> Interests: {%for interest in a['Interests']%} {{interest}}, {% endfor %} </p>
+            <a href="{{a['Homepage']}}"> Personal page</a> 
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
